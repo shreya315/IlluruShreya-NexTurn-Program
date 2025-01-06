@@ -1,0 +1,57 @@
+GitHub Exercise 
+
+1. Project Initialization: 
+
+	mkdir sample-project
+
+	cd sample-project
+	
+	git inint
+
+	touch file.txt
+
+	git add .
+
+	git commit -m "Adding text file"
+
+	git remote add origin https://github.com/your-username/sample-project.git
+	
+	git push -u origin master
+
+
+2. Feature Addition: 
+
+	touch README.md
+
+	#Sample Project
+	Description of the project
+
+
+3. Branch Management: 
+
+	git checkout -b feature/update-readme
+
+	git add .
+
+	git commit -m "Adding README file"
+
+	git push -u origin feature/update-readme
+
+4. Merge Changes: 
+
+	git checkout main
+
+	git pull origin main
+
+	git merge feature/update-readme
+
+	git push origin main
+
+5. Branch Cleanup: 
+
+	git branch -d feature/update-readme
+
+	git push origin --delete feature/update-readme
+
+
+	
