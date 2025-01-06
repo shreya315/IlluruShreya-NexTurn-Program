@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(36, 37, 37);
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3c3c3c;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+  font-size: 130%;
+}
+
+.app {
+  width: 90%;
+  height: auto;
+  min-height: 300px;
+  max-width: 600px;
+  min-width: 250px;
+  background: white;
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 100px auto 0;
+}
+
+h2{
+  text-align: center;
+  color: rgb(247, 162, 5);
+  font-family: cursive;
+}
+
+input{
+    width: 70%;
+    margin-bottom: 20px;
+    font-family: "Gochi Hand", cursive;
+    font-size: 1rem;
+    color: rgba(63, 62, 65, 0.7);
+    border-radius: 5px;
+}
+
+button{
+    margin-bottom: 20px;
+    font-family: "Gochi Hand", cursive;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(232, 152, 3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 17px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+}
+
+ul li:hover{
+    background-color: #edeef0;
+}
+
+ul li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+ul li span{
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 50%;
+    text-align: center;
+    color: #555;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+span:hover {
+    background-color: #9d9d9e;
+
+}
+
+#taskCount {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: rgb(232, 152, 3);
+  font-weight: bold;
+}

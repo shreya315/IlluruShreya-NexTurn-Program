@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expense_tracker.css">
+</head>
+
+<body>
+    <div class="app">
+        <h2>Personal Expense Tracker</h2>
+
+        <div class="ExpenseDetails">
+            <input type="number" id="amount" placeholder="Amount" />
+            <input type="text" id="description" placeholder="Description" />
+            <select id="category">
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Bills">Bills</option>
+            </select>
+            <button type="button" id="addExpense">Add Expense</button>
+        </div>
+
+        <div class="ExpenseSummary">
+            <h3>Expense Summary</h3>
+            <table id="expenseTable">
+                <thead>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expenseList">
+                </tbody>
+            </table>
+            <h4>Total Spending by Category</h4>
+            <ul id="categorySummary"></ul>
+        </div>
+    </div>
+
+    <script src="/expense_tracker.js"></script>
+</body>
+
+</html>
